@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(179, 44, 179);
+}
+.container{
+    display: flex;
+    height: fit-content;
+    width: 300px;
+    margin-top: 22rem;
+    margin-left: 35rem;
+    justify-content: center;
+    text-align: center;
+}
+.container button{
+    height: 40px;
+    width: 40px;
+    border: transparent;
+}
+.container input{
+    width: 0%;
+    transition: width 0.2s ease-out;
+    opacity: 0;
+}
+.container .active{
+    width: 260px;
+    opacity: 1;
+    transition: width 0.3s ease-in;
+}
